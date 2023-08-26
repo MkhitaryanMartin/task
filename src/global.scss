@@ -1,0 +1,37 @@
+@import "./index.scss";
+
+.app-container{
+    background: $Sapphire_Blue;
+    min-height: 100vh;
+    padding: 0 15%;
+    min-width: 320px;
+}
+
+li{
+    list-style: none;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+a{
+    text-decoration: none;
+    color: $WHITE;
+}
+.active{
+    background: linear-gradient(0deg, #C3F33B, #C3F33B),
+                    linear-gradient(0deg, rgba(224, 255, 172, 0.05), rgba(224, 255, 172, 0.05));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+}
+
+@media screen and (max-width: 920px) {
+    .app-container{
+        padding: 0 5%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .app-container{
+        padding: 0 2%;
+    }
+}

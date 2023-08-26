@@ -1,0 +1,54 @@
+@import "../../index.scss";
+
+.normal, .disabled, .send {
+    width: 300px;
+    height: 66px;
+    border-radius: 20px;
+    border-color: inherit;
+    background: linear-gradient(92.84deg, #1DD844 1.44%, #CBF62E 126.29%);
+    @include text(GT Walsheim Pro, 20px, 500, 26px, center);
+    color: $BLACK;
+    padding: 10px;
+    &:hover {
+        box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.disabled {
+    color: $BLACK_BLUR
+}
+
+.small{
+    width: 175px;
+    height: 51px;
+    border-radius: 15px;
+    border: 1px;
+    color: $WHITE;
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: inherit;
+    @include text(Inter, 16px, 500, 19px, center);
+    &:hover {
+        color: $GREEN;
+        border: 1px solid $GREEN
+    }
+
+    &:active {
+        background: linear-gradient(0deg, #C3F33B, #C3F33B),
+                    linear-gradient(0deg, rgba(224, 255, 172, 0.05), rgba(224, 255, 172, 0.05));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+}
+
+.send {
+    width: 70%;
+    height: 50px;
+}
+
+@media screen and (max-width: 400px) {
+    .send{
+        width: 90%;
+    }
+    }

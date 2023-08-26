@@ -1,0 +1,41 @@
+.education {
+    padding-top: 15vh;
+    z-index: 1;
+    background: url(../../assets/img/purpleShadow.png) -40% 150% no-repeat ,
+                url(../../assets/img/purpleShadow.png) 120% -50% no-repeat,
+                 url(../../assets/img/purpleBlur.png) 100% 80% no-repeat, 
+                url(../../assets/img/purple.png) 100% 25px no-repeat,
+                url(../../assets/img/blue.png) 0 90px no-repeat;
+    h2 {
+        font-family: Inter;
+        font-size: 45px;
+        font-size: calc(16px + 20px * (100vw / 1028px));
+        font-weight: 600;
+        line-height: 58px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        margin-bottom: 40px;
+    }
+
+}
+
+.education__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    justify-content: end;
+    align-items: center;
+    justify-items: center;
+}
+
+
+@media screen and (max-width: 720px) {
+    .education__block {
+        grid-template-columns: 1fr;
+    }
+    .education {
+      background-position: 120% 10px, 100% 20px, 100% 100%, 105% 50px, 0 150px ;
+        background-size: 100%, 100%, 20%, 20%, 5%;
+    }
+}
