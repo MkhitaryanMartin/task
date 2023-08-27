@@ -2,6 +2,7 @@ import React from "react";
 import "./style.scss";
 import { createPortal } from "react-dom";
 import CloseIcon from "../svg/close";
+
 export const Modal = ({
   isVisible = false,
   title,
