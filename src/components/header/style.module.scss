@@ -1,19 +1,24 @@
 @import "../../index.scss";
 
-.header-container, .menu-show{
+.header-container,
+.menu-show {
     width: 100%;
-    height: auto;
+    height: 100px;
     position: fixed;
-    left: 10%;
+    left: 0;
     background: $Sapphire_Blue;
     z-index: 100;
     min-width: 300px;
 }
-.nav-container, .nav-container_show{
+
+.nav-container,
+.nav-container_show {
     width: 80%;
-   padding-top: 20px;
-   transition: 1s;
+    padding-top: 20px;
+    transition: 1s;
+    margin: 0 auto;
 }
+
 .nav-block,
 .nav-block__item,
 .nav-container__block {
@@ -21,11 +26,14 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .nav-block__item,
 .logo {
     flex: 1;
 }
-.nav-container__menu-block, .menu{
+
+.nav-container__menu-block,
+.menu {
     display: none;
 }
 
@@ -34,13 +42,16 @@
         flex: 0.5
     }
 }
+
 @media screen and (max-width: 780px) {
     .menu {
         display: block;
     }
+
     .nav-block__item {
         display: none;
     }
+
     .menu-show {
         position: fixed;
         padding: 0;
@@ -52,18 +63,21 @@
         left: 5%;
         transition: 1s;
     }
-    .nav-container_show{
-       height: 392px;
-       width: 100%;
-       background: rgba(41, 51, 68, 1);
-       padding: 30px 5% 30px 2%;
+
+    .nav-container_show {
+        height: 392px;
+        width: 100%;
+        background: rgba(41, 51, 68, 1);
+        padding: 30px 5%;
     }
+
     .nav-container__menu-block {
         height: 90%;
         padding-left: 10%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+
         button {
             margin-top: 40px;
         }

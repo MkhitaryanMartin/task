@@ -6,7 +6,7 @@ import style from "./style.module.scss";
 const Education = () => {
     return (
         <div className={style.education}>
-            <h2>Что даст тебе обучение?</h2>
+            <h2 className={style.h2}>Что даст тебе обучение?</h2>
             <section className={style.education__block}>
                 {
                     localData.education.map((item) => {

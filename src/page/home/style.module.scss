@@ -37,6 +37,7 @@
     .home {
         grid-template-columns: 1fr;
         justify-content: center;
+        grid-gap: 0;
     }
     .home__first-block, .home__last-block, .home__secound-block{
         grid-column: 1/1;
@@ -88,4 +89,4 @@
     .email{
         width: 90%;
     }
-    }
+}
